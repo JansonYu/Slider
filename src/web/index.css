@@ -1,0 +1,76 @@
+.uxSlider {
+  position: relative;
+
+  .ulContainer {
+    overflow: hidden;
+  }
+
+  .ul {
+    position: relative;
+    width: max-content;
+    overflow: hidden;
+    transition: left .3s ease-in;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  .li{
+      display: inline-block;
+      height: 100%;
+      border-radius: 3px;
+      a{
+          display: inline-block;
+          height: 100%;
+      }
+      img{
+        width: 100%;
+      }
+  }
+
+  .navIcon {
+    position: absolute;
+    cursor: pointer;
+    color: #ccc;
+    top: calc(50% - 20px);
+    svg{
+      font-size: 40px;
+    }
+    &:hover{
+      color: #999
+    }
+    &.left {
+      left: -50px;
+    }
+
+    &.right {
+      right: -50px;
+    }
+  }
+
+  .moveHorizontal {
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s ease-out;
+    & > li {
+      display: table-cell;
+    }
+  }
+
+  .moveVertical {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all ease-in 0.3s;
+
+    & > li {
+      display: block;
+    }
+  }
+}

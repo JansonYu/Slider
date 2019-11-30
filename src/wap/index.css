@@ -1,0 +1,32 @@
+.uxSlider {
+  position: relative;
+  width: 100vw;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar { 
+    width: 0 !important 
+  }
+  .ul {
+    position: relative;
+    width: max-content;
+    overflow: hidden;
+    transition: left .3s ease-in;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: auto;
+    padding-right: 32px;/*rem*/
+  }
+  .li{
+      display: inline-block;
+      height: 100%;
+      &:last-child{
+        margin-right: 24px;/*rem*/
+      }
+      img{
+        width: 100%;
+      }
+  }
+
+}
