@@ -15,3 +15,5 @@ intervalTime	每屏切换的时间间隔(ms)	否		3000
 autoRun	自动播放	否	left向左，right向右，up向上，down向下，不写或者false禁止自动播放	禁止	left、right对应moveHorizontal，up、down对应moveVertical
 hoverStop	鼠标悬浮时，是否停止播放	否	true悬浮停止，不写或者false悬浮不停止	悬浮时不停止	
 point	底部是否显示轮播进度	否	true显示，false隐藏	true	
+
+组件使用
